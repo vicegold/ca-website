@@ -40,3 +40,21 @@ function toBottom() {
 	});
 
 })(window, jQuery);
+
+
+$(document).ready(function(){
+		// PAGE SETTINGS
+		// @topada
+
+		// calendar
+		var calToday = new Date();
+    var calCaPageOnline  =  new Date('02/08/2016');
+    var calCaPageOffline =  new Date('05/30/2016');
+
+
+		// controller: section visibility if outside of online range
+    if(calToday > calCaPageOnline && calToday < calCaPageOffline)
+		{
+				//$("section").hide();
+    }
+});
